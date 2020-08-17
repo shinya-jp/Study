@@ -27,6 +27,16 @@ if (x >= 100) {
 // 60点以上 C
 // 60点未満 D
 
+var y = 60;
+if (y >= 90 ) {
+	console.log('A');
+} else if (y >= 80){
+	console.log('B');
+} else if (y >= 60 ) {
+	console.log('C');
+} else {
+	console.log('D');
+}
 
 
 
