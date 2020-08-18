@@ -27,6 +27,7 @@ if (x >= 100) {
 // 60点以上 C
 // 60点未満 D
 
+/*
 var y = 60;
 if (y >= 90 ) {
 	console.log('A');
@@ -37,7 +38,7 @@ if (y >= 90 ) {
 } else {
 	console.log('D');
 }
-
+*/
 
 
 // switch
@@ -45,4 +46,21 @@ if (y >= 90 ) {
 // 変数nの値が2だったら、「数値は2です」とコンソールに表示。
 // 変数nの値が3だったら、「数値は3です」とコンソールに表示。
 // 変数nの値が上記以外だったら、「範囲外です」とコンソールに表示
+
+var n = '3';
+
+switch(n) {
+	case 1:
+		console.log('数値は１です');
+		break;
+	case 2:
+		console.log('数値は２です');
+		break;
+	case 3:
+		console.log('数値は３です');
+		break;
+	default:
+		console.log('範囲外です');
+		break;
+}
 
