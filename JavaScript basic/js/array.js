@@ -7,6 +7,10 @@
 
 
 var colors = ['Red', 'Green', 'Blue']
+console.log(colors[0]);
 console.log(colors[1]);
+console.log(colors[2]);
 
 // 範囲外の添字を指定するとどうなるか？ undefined
+
+console.log(colors[3]);
