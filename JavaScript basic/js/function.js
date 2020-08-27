@@ -20,10 +20,15 @@ console.log(getRectangle(3, 5));
 
 // 関数リテラルによる関数の定義
 
+/*
 var getRectangle = function(height, width) {
 	return height * width;
 };
 
 console.log(getRectangle(3, 5));
+*/
 
 // Function コンストラクター
+
+var getRectangle = new Function('height', 'width', 'return height * width');
+console.log(getRectangle(3, 5));
