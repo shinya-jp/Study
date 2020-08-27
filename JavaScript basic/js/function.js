@@ -10,13 +10,13 @@
 
 // function 命令
 
-/*
+
 function getRectangle(height, width) {
 	return height * width;
 }
 
 console.log(getRectangle(3, 5));
-*/
+
 
 // 関数リテラルによる関数の定義
 
