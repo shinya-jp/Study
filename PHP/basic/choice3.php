@@ -1,5 +1,5 @@
 <?php
-$dice = 2;
+$dice = 2git ;
 
 if ($dice >= 5) {
 	echo "Win";
