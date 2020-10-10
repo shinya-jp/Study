@@ -4,4 +4,5 @@
 $student = ["name" => "Andy", "age" => 20];
 $student["height"] = 180;
 
-echo $student["height"] . PHP_EOL;
+echo count($student) . PHP_EOL;
+var_dump($student);
