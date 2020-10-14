@@ -1,5 +1,5 @@
 <?php
-$array = ["Andy", "Bety", "Carol"];
+$array = ["Bety", "Carol", "Andy"];
 
 // sort 配列をソート(並び替え)する
 sort($array);
