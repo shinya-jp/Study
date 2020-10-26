@@ -2,8 +2,8 @@
 // $_POST変数はスーパーグローバル変数と呼ばれる
 // $_POST変数に送信されたパラメーター(idとpassword)が格納されている
 
-$id = $_POST["id"];
-$password = $_POST["password"];
+$id = $_GET["id"];
+$password = $_GET["password"];
 
 $message = "NG";
 if ($id === "Andy" && $password === "secret") {
