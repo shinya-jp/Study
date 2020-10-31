@@ -6,6 +6,9 @@ while (($line = fgetcsv($handle)) !== false) {
 }
 fclose($handle);
 // print_r($users)
+
+// 文字データとして扱う
+header("Content-Type: text/plain");
 ?>
 
 <!DOCTYPE html>
