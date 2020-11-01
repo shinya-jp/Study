@@ -5,7 +5,13 @@
 $id = $_POST["id"];
 $password = $_POST["password"];
 
+
 if ($id === "Andy" && $password === "secret") {
+// セッションの追加
+	session_start();
+	$_SESSION["id"] = $id;
+	$_SESSION["time"] = date("Y-m-d H:i:s");
+
 	// リダイレクト先を指定
 	header("Location: menu.php");
 } else {
