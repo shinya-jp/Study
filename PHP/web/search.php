@@ -1,5 +1,21 @@
 <?php
-$name = $_GET["name"];
+// $name = $_GET["name"];
+
+// $name = null;
+// // 変数データがあるか確認
+// if (!isset($_GET["name"])) {
+// 	$name = null;
+// 	// 文字列データか確認
+// }else if (!is_string($_GET["name"])) {
+// 	$name = false;
+// 	// 上記をスルーしたときのみnameデータ（検索単語）を送信する
+// } else {
+// 	$name = $_GET["name"];
+// }
+
+// 上記のコードを関数を使うと
+$name = (string)filter_input(INPUT_GET, "name");
+
 
 $names = file("names.txt", FILE_IGNORE_NEW_LINES);
 
