@@ -1,6 +1,8 @@
 <?php
- $x = $_POST["x"];
- $y = $_POST["y"];
+ $x = (integer)filter_input(INPUT_POST, "x");
+ $y = (integer)filter_input(INPUT_POST, "y");
+
+
  $total = $x + $y;
 
 ?>
