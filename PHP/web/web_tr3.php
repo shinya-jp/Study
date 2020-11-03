@@ -26,9 +26,9 @@ fclose($fp);
 		</tr>
 		<?php for ($i=0; $i < count($scores); $i++) { ?>
 		<tr>
-			<td><?php echo $scores[$i][0]; ?></td>
-			<td><?php echo $scores[$i][1]; ?></td>
-			<td><?php echo $scores[$i][2]; ?></td>
+			<td><?php echo htmlspecialchars($scores[$i][0]); ?></td>
+			<td><?php echo htmlspecialchars($scores[$i][1]); ?></td>
+			<td><?php echo htmlspecialchars($scores[$i][2]); ?></td>
 		</tr>
 		<?php } ?>
 	</table>
