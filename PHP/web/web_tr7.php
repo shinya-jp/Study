@@ -5,7 +5,7 @@ if (isset($_SESSION["cart"])) {
 	$cart = $_SESSION["cart"];
 }
 if (isset($_GET["item"])) {
-	$cart = $_GET["item"];
+	$cart[] = $_GET["item"];
 }
 $_SESSION["cart"] = $cart;
 
@@ -20,7 +20,7 @@ $items = implode(",", $cart);
 </head>
 <body>
 	<h3>Shop</h3>
-	<p>Cart: <?php var_dump($items); ?></p>
+	<p>Cart: <?php echo $items; ?></p>
 	<hr>
 	<ul>
 		<li><a href="web_tr7.php?item=apple">Apple</a></li>
